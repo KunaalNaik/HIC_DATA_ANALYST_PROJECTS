@@ -122,6 +122,8 @@ df[['Customer ID', 'R_Score', 'F_Score', 'M_Score', 'RFM_Score']].head()
 ### Task 6: Segmenting Customers
 
 - **Description**: Segment customers into groups like best customers, high spenders, and churned customers based on their RFM scores.
+- #Can we add more segments like worst customer,  low spending customer? Couldnt see a segment for frequency. A segment for frequent spenders and non frequent spenders?
+
   
 - **Code Instructions**:
   1. Define rules for each customer segment based on RFM scores.
@@ -131,11 +133,11 @@ df[['Customer ID', 'R_Score', 'F_Score', 'M_Score', 'RFM_Score']].head()
 ```python
 # Segment customers based on RFM Score
 def segment_customers(df):
-    if df['RFM_Score'] == '111':
+    if df['RFM_Score'] == '111':  #  df['RFM_Score'] == '444' it needs to be 444 for the best customer?
         return 'Best Customer'
-    elif df['RFM_Score'].startswith('1'):
+    elif df['RFM_Score'].startswith('1'):  #df['RFM_Score'].startswith('4')  For Loyal  customer- High Recency in fourth quadrant
         return 'Loyal Customer'
-    elif df['RFM_Score'][0] == '4':
+    elif df['RFM_Score'][0] == '4':    #df['RFM_Score'][0] == '1' For Churned customer- Low Recency in first quadrant
         return 'Churned Customer'
     elif df['RFM_Score'][2] == '4':
         return 'High-Spending Customer'
@@ -190,13 +192,13 @@ By completing these tasks, the learner will be able to:
 ```python
 # Define clusters based on customer segment or RFM scores
 def assign_cluster(df):
-    if df['RFM_Score'] == '111':
+    if df['RFM_Score'] == '111':    #df['RFM_Score'] == '444'
         return 'Top Tier Customers'
-    elif df['RFM_Score'].startswith('1'):
+    elif df['RFM_Score'].startswith('1'):     #df['RFM_Score'].startswith('4')
         return 'High Tier Customers'
-    elif df['RFM_Score'][0] == '2':
+    elif df['RFM_Score'][0] == '2':          #df['RFM_Score'][0] == '3'
         return 'Mid High Tier Customers'
-    elif df['RFM_Score'][0] == '3':
+    elif df['RFM_Score'][0] == '3':          #df['RFM_Score'][0] == '2'
         return 'Mid Tier Customers'
     else:
         return 'Low Tier Customers'
