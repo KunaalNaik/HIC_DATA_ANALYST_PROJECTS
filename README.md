@@ -179,10 +179,6 @@ df['Customer_Segment'] = df.apply(segment_customers, axis=1)
 ### Explanation:
 - **Casting to Integers**: By using `int(df['R_Score'])`, `int(df['F_Score'])`, and `int(df['M_Score'])`, we ensure that the values are correctly compared as integers.
 - **Logical Conditions**: The segmentation rules are applied correctly once we convert the categorical values into integers, allowing the conditions to work as expected.
-
-This fix should ensure you get all the desired segments, not just "Other."
-
-Let me know if this resolves the issue!
 ---
 ### Task 7: Counting Customer Segments
 
@@ -301,20 +297,4 @@ summary_table
 ### Explanation:
 1. **Merging Results**: The code merges the segment counts, total order value, average order days, and average recency into a single table, using the `Customer_Segment` as the key for merging.
 2. **Final Summary**: The result is stored in `summary_table`, which provides a detailed view of each customer segment, including the number of customers, total revenue contribution, frequency of purchases, and how recently customers made a purchase.
-
-This final summary table gives you a comprehensive understanding of the behavior and value of each customer segment. Let me know if you'd like to explore more insights or further tasks!
----
-
----
-
----
-```
-
-
----
-
----
-
----
-
 ---
