@@ -139,9 +139,9 @@ df['M_Score'] = pd.qcut(df['Monetary'], 4, labels=[1, 2, 3, 4])  # Higher score 
 df['RFM_Score'] = df['R_Score'].astype(str) + df['F_Score'].astype(str) + df['M_Score'].astype(str)
 ```
 ---
-You're right—the issue likely lies in the way the conditions are being evaluated. When using `apply()` in pandas, the `R_Score`, `F_Score`, and `M_Score` columns are actually stored as `Categorical` objects (due to the `pd.qcut()` method), and comparing them using the string `'4'` won't work as expected.
+You're right—the issue likely lies in the way the conditions are being evaluated. When using `apply()` in pandas, the `R_Score`, `F_Score`, and `M_Score` columns are actually stored as `Categorical` objects (due to the `pd.qcut()` method), and comparing them using the string `'4'` won't work as expected. 
 
-To fix this, we need to cast the values to integers before applying the conditions, so the logic works correctly.
+To fix this, we need to cast the values to integers before applying the conditions, so the logic works correctly. # Even without casting to int it still works as expected. So this might be redundant step and confusing
 
 Here's the corrected code:
 
@@ -152,7 +152,7 @@ Here's the corrected code:
 - **Code Instructions**:
   1. Define clear rules for each customer segment:
      - **Best Customers**: Customers who score 4 in **all three categories** (Recency, Frequency, and Monetary).
-     - **Loyal Customers**: Customers with a **high Recency score (R_Score = 4)**, regardless of their Frequency or Monetary score.
+     - **Loyal Customers**: Customers with a **high Recency score (R_Score = 4)**, regardless of their Frequency or Monetary score. ##can we define loyal customer as someone with High Frequency score(F_Score=4) as it is                              more intuitive
      - **Churned Customers**: Customers with **low Recency (R_Score = 1)** and **low Frequency (F_Score = 1)**.
      - **High-Spending Customers**: Customers with a **high Monetary score (M_Score = 4)**.
      - **Other**: Any customers who don’t fit into the above segments.
