@@ -139,11 +139,6 @@ df['M_Score'] = pd.qcut(df['Monetary'], 4, labels=[1, 2, 3, 4])  # Higher score 
 df['RFM_Score'] = df['R_Score'].astype(str) + df['F_Score'].astype(str) + df['M_Score'].astype(str)
 ```
 ---
-You're right—the issue likely lies in the way the conditions are being evaluated. When using `apply()` in pandas, the `R_Score`, `F_Score`, and `M_Score` columns are actually stored as `Categorical` objects (due to the `pd.qcut()` method), and comparing them using the string `'4'` won't work as expected. 
-
-To fix this, we need to cast the values to integers before applying the conditions, so the logic works correctly. # Even without casting to int it still works as expected. So this might be redundant step and confusing
-
-Here's the corrected code:
 
 ### Task 6: Segmenting Customers (Fixed)
 
@@ -152,7 +147,7 @@ Here's the corrected code:
 - **Code Instructions**:
   1. Define clear rules for each customer segment:
      - **Best Customers**: Customers who score 4 in **all three categories** (Recency, Frequency, and Monetary).
-     - **Loyal Customers**: Customers with a **high Recency score (R_Score = 4)**, regardless of their Frequency or Monetary score. ##can we define loyal customer as someone with High Frequency score(F_Score=4) as it is                              more intuitive
+     - **Loyal Customers**: Customers with a **high Frquency score (F_Score = 4)**, regardless of their Recency or Monetary score. 
      - **Churned Customers**: Customers with **low Recency (R_Score = 1)** and **low Frequency (F_Score = 1)**.
      - **High-Spending Customers**: Customers with a **high Monetary score (M_Score = 4)**.
      - **Other**: Any customers who don’t fit into the above segments.
@@ -161,13 +156,13 @@ Here's the corrected code:
 ```python
 # Step 6: Define updated segmentation based on RFM scores, ensuring correct type casting
 def segment_customers(df):
-    if int(df['R_Score']) == 4 and int(df['F_Score']) == 4 and int(df['M_Score']) == 4:
+    if df['R_Score'] == 4 and df['F_Score'] == 4 and df['M_Score'] == 4:
         return 'Best Customer'  # Best in Recency, Frequency, and Monetary
-    elif int(df['R_Score']) == 4:
-        return 'Loyal Customer'  # Most recent purchases (R_Score = 4)
-    elif int(df['R_Score']) == 1 and int(df['F_Score']) == 1:
+    elif df['F_Score'] == 4:
+        return 'Loyal Customer'  # Most frequent purchasers (F_Score = 4)
+    elif df['R_Score'] == 1 and df['F_Score'] == 1:
         return 'Churned Customer'  # Low Recency and Frequency (R_Score = 1, F_Score = 1)
-    elif int(df['M_Score']) == 4:
+    elif df['M_Score'] == 4:
         return 'High-Spending Customer'  # High spenders (M_Score = 4)
     else:
         return 'Other'  # Default group for customers who don't fit the above categories
