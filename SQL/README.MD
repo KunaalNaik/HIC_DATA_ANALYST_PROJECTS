@@ -7,13 +7,13 @@ This course is a hands-on SQL learning experience, designed to take learners fro
 
 ---
 
-This structure and set of tags will help learners quickly identify the focus on SQL, eCommerce data analysis, and real-world project-based learning from beginner to advanced levels.
-
----
-
 ### **Task 1.1.1: Retrieve Orders by a Specific Customer**
 
 **Description**: This task helps in identifying all the orders placed by a particular customer, which is useful for analyzing customer purchasing behavior and customer service follow-up.
+
+**Project Task**:
+- Retrieve details of all orders placed by a single customer to gain insights into their purchasing frequency and preferences.
+- This information can help in crafting personalized offers or customer retention strategies.
 
 **Instructions**:
 - **Columns to Use**: `CustomerID`, `CustomerName`, `OrderID`, `OrderDate`, `TotalAmount`.
@@ -39,6 +39,10 @@ ORDER BY OrderDate ASC
 
 **Description**: Understanding the products within a specific category helps in category-based analysis, such as identifying top sellers and managing inventory.
 
+**Project Task**:
+- Retrieve a list of products within a specific category, such as "Electronics."
+- This helps in understanding the product lineup, inventory requirements, and potential sales trends within that category.
+
 **Instructions**:
 - **Columns to Use**: `ProductID`, `ProductName`, `Category`, `Price`.
 - **Commands to Use**: `SELECT`, `WHERE`.
@@ -61,6 +65,10 @@ ORDER BY ProductName ASC
 ### **Task 1.1.3: List Recent Orders**
 
 **Description**: Analyzing recent orders is essential for understanding current demand and sales trends, helping businesses optimize stock and marketing efforts.
+
+**Project Task**:
+- Identify and retrieve a list of recent orders placed within the last month.
+- This task helps the business stay updated on current purchasing patterns and detect any seasonal trends.
 
 **Instructions**:
 - **Columns to Use**: `OrderID`, `OrderDate`, `CustomerID`, `TotalAmount`.
@@ -86,6 +94,10 @@ ORDER BY OrderDate DESC
 
 **Description**: Finding orders with high values helps in targeting premium customers and understanding the types of products that drive significant revenue.
 
+**Project Task**:
+- Retrieve a list of orders where the `TotalAmount` exceeds $500.
+- This allows the business to focus on high-value transactions and identify top-spending customers for targeted marketing.
+
 **Instructions**:
 - **Columns to Use**: `CustomerID`, `CustomerName`, `OrderID`, `TotalAmount`.
 - **Commands to Use**: `SELECT`, `WHERE`, `ORDER BY`.
@@ -110,6 +122,10 @@ ORDER BY TotalAmount DESC
 
 **Description**: Identifying the most ordered products is crucial for stock management and marketing, allowing focus on popular products.
 
+**Project Task**:
+- List the top 5 most frequently ordered products.
+- This task helps in identifying popular items, which can guide restocking and promotional strategies.
+
 **Instructions**:
 - **Columns to Use**: `ProductID`, `ProductName`, `Quantity`.
 - **Commands to Use**: `SELECT`, `ORDER BY`, `LIMIT`.
@@ -131,25 +147,4 @@ LIMIT 5
 
 ---
 
-### **Task 2.2.3: List Orders by Status**
-
-**Description**: Monitoring the status of orders allows for efficient tracking and handling, especially for shipments and cancellations.
-
-**Instructions**:
-- **Columns to Use**: `OrderID`, `OrderStatus`, `CustomerID`, `OrderDate`.
-- **Commands to Use**: `SELECT`, `WHERE`.
-- **Steps**:
-  - Use `SELECT` to retrieve order details.
-  - Filter based on `OrderStatus`, e.g., retrieve only "Shipped" orders.
-
-**SQL Code**:
-```sql
-%%sql
--- Task 2.2.3 - List Orders by Status
-SELECT OrderID, OrderStatus, CustomerID, OrderDate
-FROM eCommerceOrders
-WHERE OrderStatus = 'Shipped'
-ORDER BY OrderDate ASC
-```
-
----
+This format includes **Project Task** in bullet points to provide a clear, actionable context for each task, making it easy for learners to understand the relevance and goal of each project. Let me know if this works, and I can apply it to the remaining tasks.
