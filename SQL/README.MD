@@ -1,150 +1,67 @@
-**Course Name**: **"SQL for Data Analysis: Real-World Projects with eCommerce Data"**
+### **SQL for Data Analysis Series - Course Index and Summary**
 
-**Tags**: `#SQLBasics`, `#DataAnalysis`, `#BeginnerToAdvanced`, `#eCommerceData`, `#SQLProjects`, `#DataRetrieval`, `#SQLQueries`, `#DataManipulation`, `#SQLJoins`, `#OrderAnalytics`, `#CustomerInsights`, `#InventoryManagement`, `#SalesTrends`, `#BusinessIntelligence`, `#HandsOnSQL`, `#RealWorldSQL`, `#DataScienceFundamentals`
-
-**Course Description**:
-This course is a hands-on SQL learning experience, designed to take learners from beginner to advanced SQL skills through real-world eCommerce data projects. Each project simulates essential business tasks such as customer analysis, sales trends, and inventory management, providing learners with practical skills they can directly apply in real-world data scenarios.
+Welcome to the SQL for Data Analysis Series! This structured, multi-level course series is designed to take you from SQL fundamentals to advanced data analysis and optimization techniques. Each course focuses on real-world projects based on eCommerce data, making it practical and immediately applicable.
 
 ---
 
-### **Task 1.1.1: Retrieve Orders by a Specific Customer**
+### **Course Overview**
 
-**Description**: This task helps in identifying all the orders placed by a particular customer, which is useful for analyzing customer purchasing behavior and customer service follow-up.
-
-**Project Task**:
-- Retrieve details of all orders placed by a single customer to gain insights into their purchasing frequency and preferences.
-- This information can help in crafting personalized offers or customer retention strategies.
-
-**Instructions**:
-- **Columns to Use**: `CustomerID`, `CustomerName`, `OrderID`, `OrderDate`, `TotalAmount`.
-- **Commands to Use**: `SELECT`, `WHERE`.
-- **Steps**:
-  - Use the `SELECT` statement to retrieve columns relevant to customer and order details.
-  - Filter the records by a specific `CustomerID`.
-  - Sort by `OrderDate` if needed for chronological order.
-
-**SQL Code**:
-```sql
-%%sql
--- Task 1.1.1 - Retrieve Orders by a Specific Customer
-SELECT CustomerID, CustomerName, OrderID, OrderDate, TotalAmount
-FROM eCommerceOrders
-WHERE CustomerID = 'CUST0001'  -- Replace with specific CustomerID
-ORDER BY OrderDate ASC
-```
+| **Course**                    | **Level**     | **Focus**                                                             | **Main Topics**                                                                                                  | **Tags**                                |
+|-------------------------------|---------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
+| Beginner Level I              | Beginner      | SQL Fundamentals for Data Retrieval                                   | Basic Queries, Filtering, Sorting, Aggregates, Joins                                                             | #SQLBasics, #DataRetrieval              |
+| Beginner Level II             | Beginner      | Expanding SQL Toolkit                                                 | Aliases, Calculations, NULL Handling, Conditional Logic, Date Functions, Simple Joins                            | #DataManipulation, #ConditionalLogic    |
+| Beginner Level III            | Beginner      | Advanced Basics in SQL                                                | Subqueries, Grouping, Window Functions, Set Operations, Recursive Queries                                        | #Subqueries, #Grouping, #SetOperations  |
+| Intermediate Level I          | Intermediate  | Advanced Query Techniques                                             | Complex Filtering, Multi-Level Aggregation, Advanced Joins, Window Functions, Recursive CTE                      | #MultiLevelAggregation, #CTE, #Joins    |
+| Intermediate Level II         | Intermediate  | Data Transformation and Integrity                                     | Data Transformations, JSON & XML Parsing, Data Validation, Transactions, Error Handling                          | #DataTransformation, #ErrorHandling     |
+| Intermediate Level III        | Intermediate  | Advanced Analytics and Optimization                                   | Query Optimization, Multi-Step Analysis, Statistical Functions, Indexing, Materialized Views, Data Sampling       | #QueryOptimization, #StatisticalAnalysis |
 
 ---
 
-### **Task 1.1.2: List Products in a Specific Category**
+### **Course Summaries**
 
-**Description**: Understanding the products within a specific category helps in category-based analysis, such as identifying top sellers and managing inventory.
+#### **SQL for Data Analysis: Beginner Level I - Data Retrieval Essentials**
+- **Description**: Learn the fundamentals of SQL with data retrieval techniques to query eCommerce data.
+- **Topics**: SELECT statements, WHERE filters, ORDER BY sorting, basic aggregates (SUM, COUNT), and JOINs.
+- **Tags**: `#SQLBasics`, `#DataRetrieval`, `#eCommerceData`
 
-**Project Task**:
-- Retrieve a list of products within a specific category, such as "Electronics."
-- This helps in understanding the product lineup, inventory requirements, and potential sales trends within that category.
+#### **SQL for Data Analysis: Beginner Level II - Expanding Your SQL Toolkit**
+- **Description**: Build on the basics with additional SQL tools for data manipulation and handling NULL values.
+- **Topics**: Aliases, calculations in SQL, NULL handling, conditional logic (CASE), string functions, date functions, simple joins.
+- **Tags**: `#DataManipulation`, `#ConditionalLogic`, `#BeginnerSQL`
 
-**Instructions**:
-- **Columns to Use**: `ProductID`, `ProductName`, `Category`, `Price`.
-- **Commands to Use**: `SELECT`, `WHERE`.
-- **Steps**:
-  - Use the `SELECT` statement to retrieve columns with product details.
-  - Filter by `Category` to get products within a particular category, such as 'Electronics'.
+#### **SQL for Data Analysis: Beginner Level III - Advanced Basics**
+- **Description**: Dive into more complex beginner-level SQL tasks such as subqueries, pattern matching, and grouping.
+- **Topics**: Advanced filtering, nested subqueries, conditional aggregations, window functions, recursive queries.
+- **Tags**: `#Subqueries`, `#Grouping`, `#SetOperations`, `#WindowFunctions`
 
-**SQL Code**:
-```sql
-%%sql
--- Task 1.1.2 - List Products in a Specific Category
-SELECT ProductID, ProductName, Category, Price
-FROM eCommerceOrders
-WHERE Category = 'Electronics'  -- Replace with desired category
-ORDER BY ProductName ASC
-```
+#### **SQL for Data Analysis: Intermediate Level I - Advanced Query Techniques**
+- **Description**: Intermediate course focusing on more complex SQL techniques, ideal for multi-level data analysis.
+- **Topics**: Complex filtering, multi-level grouping, advanced join types (self, outer), nested subqueries, and recursive CTEs.
+- **Tags**: `#MultiLevelAggregation`, `#AdvancedJoins`, `#RecursiveCTE`
 
----
+#### **SQL for Data Analysis: Intermediate Level II - Data Transformation and Integrity**
+- **Description**: Learn to transform and validate data, handle semi-structured data, and manage data integrity with transactions.
+- **Topics**: Data transformation (pivoting/unpivoting), JSON/XML parsing, regular expressions, nested transactions, error handling.
+- **Tags**: `#DataTransformation`, `#JSON`, `#XML`, `#ErrorHandling`
 
-### **Task 1.1.3: List Recent Orders**
-
-**Description**: Analyzing recent orders is essential for understanding current demand and sales trends, helping businesses optimize stock and marketing efforts.
-
-**Project Task**:
-- Identify and retrieve a list of recent orders placed within the last month.
-- This task helps the business stay updated on current purchasing patterns and detect any seasonal trends.
-
-**Instructions**:
-- **Columns to Use**: `OrderID`, `OrderDate`, `CustomerID`, `TotalAmount`.
-- **Commands to Use**: `SELECT`, `WHERE`, `ORDER BY`.
-- **Steps**:
-  - Use the `SELECT` statement to fetch order details.
-  - Filter for orders within the past month by comparing `OrderDate`.
-  - Sort by `OrderDate` in descending order to get the most recent orders at the top.
-
-**SQL Code**:
-```sql
-%%sql
--- Task 1.1.3 - List Recent Orders
-SELECT OrderID, OrderDate, CustomerID, TotalAmount
-FROM eCommerceOrders
-WHERE OrderDate >= DATE('now', '-1 month')  -- Last month filter
-ORDER BY OrderDate DESC
-```
+#### **SQL for Data Analysis: Intermediate Level III - Advanced Analytics and Optimization**
+- **Description**: Focus on advanced analytics, statistical analysis, and query optimization techniques to handle large datasets.
+- **Topics**: Query optimization, indexing, materialized views, data sampling, temporary tables, advanced statistical functions.
+- **Tags**: `#QueryOptimization`, `#StatisticalAnalysis`, `#DataSampling`, `#MaterializedViews`
 
 ---
 
-### **Task 2.2.1: Identify High-Value Orders**
+### **Quick Reference Table for Project Topics Across Courses**
 
-**Description**: Finding orders with high values helps in targeting premium customers and understanding the types of products that drive significant revenue.
-
-**Project Task**:
-- Retrieve a list of orders where the `TotalAmount` exceeds $500.
-- This allows the business to focus on high-value transactions and identify top-spending customers for targeted marketing.
-
-**Instructions**:
-- **Columns to Use**: `CustomerID`, `CustomerName`, `OrderID`, `TotalAmount`.
-- **Commands to Use**: `SELECT`, `WHERE`, `ORDER BY`.
-- **Steps**:
-  - Use the `SELECT` statement to fetch customer and order details.
-  - Filter for orders where `TotalAmount` exceeds a defined threshold, e.g., $500.
-  - Sort by `TotalAmount` in descending order to highlight the highest-value orders.
-
-**SQL Code**:
-```sql
-%%sql
--- Task 2.2.1 - Identify High-Value Orders
-SELECT CustomerID, CustomerName, OrderID, TotalAmount
-FROM eCommerceOrders
-WHERE TotalAmount > 500
-ORDER BY TotalAmount DESC
-```
+| **Course**                   | **Topics Covered**                                                                                                                                                                                      | **Key Skills Developed**                                                                                                                                           |
+|------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Beginner Level I             | Basic Queries, Filters, Aggregates, Joins                                                                                                                                                              | Data Retrieval, Filtering, Sorting, Aggregation, Joins                                                                                                             |
+| Beginner Level II            | Aliases, Calculations, NULL Handling, Conditional Logic, Date Functions, Joins                                                                                                                         | Data Manipulation, Handling Missing Data, Basic Calculations, Conditional Statements                                                                               |
+| Beginner Level III           | Advanced Filtering, Subqueries, Window Functions, Set Operations, Recursive Queries                                                                                                                    | Complex Filtering, Subquery Logic, Pattern Matching, Recursive Analysis                                                                                            |
+| Intermediate Level I         | Complex Filtering, Multi-Level Aggregation, Advanced Joins, Window Functions, Recursive CTE                                                                                                           | Multi-Level Aggregation, Self Joins, Window Function Application                                                                                                   |
+| Intermediate Level II        | Data Transformations, JSON & XML Parsing, Data Validation, Transactions, Error Handling                                                                                                               | Data Transformation, Handling Semi-Structured Data, Data Integrity, Error Management                                                                               |
+| Intermediate Level III       | Query Optimization, Indexing, Materialized Views, Data Sampling, Statistical Analysis                                                                                                                 | Query Optimization Techniques, Advanced Analytics, Statistical Computation, Efficient Data Handling with Materialized Views                                        |
 
 ---
 
-### **Task 2.2.2: Retrieve Top Ordered Products**
-
-**Description**: Identifying the most ordered products is crucial for stock management and marketing, allowing focus on popular products.
-
-**Project Task**:
-- List the top 5 most frequently ordered products.
-- This task helps in identifying popular items, which can guide restocking and promotional strategies.
-
-**Instructions**:
-- **Columns to Use**: `ProductID`, `ProductName`, `Quantity`.
-- **Commands to Use**: `SELECT`, `ORDER BY`, `LIMIT`.
-- **Steps**:
-  - Use `SELECT` to get product details and total quantities ordered.
-  - Sort by `Quantity` in descending order to show the most ordered products.
-  - Use `LIMIT` to display only the top 5.
-
-**SQL Code**:
-```sql
-%%sql
--- Task 2.2.2 - Retrieve Top Ordered Products
-SELECT ProductID, ProductName, SUM(Quantity) as TotalQuantity
-FROM eCommerceOrders
-GROUP BY ProductID, ProductName
-ORDER BY TotalQuantity DESC
-LIMIT 5
-```
-
----
-
-This format includes **Project Task** in bullet points to provide a clear, actionable context for each task, making it easy for learners to understand the relevance and goal of each project. Let me know if this works, and I can apply it to the remaining tasks.
+This summary provides a comprehensive overview for learners to navigate through each course, track their progress, and understand the key topics covered at each level. This structured approach will guide you from beginner to intermediate-level SQL proficiency, equipping you with the skills needed to handle increasingly complex data analysis tasks.
