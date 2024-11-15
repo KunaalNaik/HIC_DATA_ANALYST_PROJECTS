@@ -1,4 +1,4 @@
-# SQL for Data Analysis: Beginner Level I - Practical SQL for Real-World eCommerce Analytics
+# SQL for Data Analysis: Beginner Level II - Practical SQL for Real-World eCommerce Analytics
 This course is a hands-on SQL learning experience, designed to take learners from beginner to advanced SQL skills through real-world eCommerce data projects. Each project simulates essential business tasks such as customer analysis, sales trends, and inventory management, providing learners with practical skills they can directly apply in real-world data scenarios.
 
 ## Task Description for Jypyter Notebook
