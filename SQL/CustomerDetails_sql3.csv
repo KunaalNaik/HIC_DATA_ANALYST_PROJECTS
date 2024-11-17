@@ -1,0 +1,101 @@
+CustomerID,CustomerFirstName,CustomerLastName,City,Email
+CUST0001,Norma,Fisher,Ramireztown,fisher@yahoo.com
+CUST0002,Jorge,Sullivan,Port Jacqueline,sullivan@yahoo.com
+CUST0003,Elizabeth,Woods,North Vanessa,elizabeth@gmail.com
+CUST0004,Susan,Wagner,Marshallmouth,wagner@yahoo.com
+CUST0005,Peter,Montgomery,South Christopher,montgomery@yahoo.com
+CUST0006,Theodore,Mcgrath,Smithfurt,theodore@gmail.com
+CUST0007,Stephanie,Collins,Davisborough,collins@yahoo.com
+CUST0008,Stephanie,Sutton,East Christopherville,sutton@yahoo.com
+CUST0009,Brian,Hamilton,Grantbury,hamilton@yahoo.com
+CUST0010,Susan,Levy,Thomasberg,levy@yahoo.com
+CUST0011,Sean,Green,Port Karafort,sean@gmail.com
+CUST0012,Kimberly,Smith,Chadland,kimberly@gmail.com
+CUST0013,Jennifer,Summers,Martinstad,summers@yahoo.com
+CUST0014,April,Snyder,New Patricia,snyder@yahoo.com
+CUST0015,Dana,Nguyen,East Heather,nguyen@yahoo.com
+CUST0016,Cheryl,Bradley,Port Michelletown,cheryl@gmail.com
+CUST0017,Walter,Pratt,Simmonsfort,pratt@yahoo.com
+CUST0018,Bobby,Flores,Rodriguezside,bobby@gmail.com
+CUST0019,Tasha,Rodriguez,Jonesberg,tasha@gmail.com
+CUST0020,Michelle,Kelley,Lloydville,michelle@gmail.com
+CUST0021,Kimberly,Maynard,South Anitamouth,maynard@yahoo.com
+CUST0022,Laurie,Wallace,Lake Michael,wallace@yahoo.com
+CUST0023,Janice,Johnston,Ellishaven,johnston@yahoo.com
+CUST0024,Collin,Lopez,East Jessica,lopez@yahoo.com
+CUST0025,Mary,Alvarez,Lake Michael,alvarez@yahoo.com
+CUST0026,Peter,Mcdowell,North Melissa,mcdowell@yahoo.com
+CUST0027,Sarah,Villanueva,Port Donna,villanueva@yahoo.com
+CUST0028,Kimberly,Myers,Lake Michael,myers@yahoo.com
+CUST0029,Desiree,Cain,Lake Michael,desiree@gmail.com
+CUST0030,Stephanie,Lawrence,Erinshire,lawrence@yahoo.com
+CUST0031,Lauren,Hayes,Lake Karenhaven,lauren@gmail.com
+CUST0032,Whitney,Stark,Austintown,stark@yahoo.com
+CUST0033,Angela,Salazar,Sherriport,angela@gmail.com
+CUST0034,Mr.,Ryan,New Randy,ryan@yahoo.com
+CUST0035,Autumn,Robinson,Lake Tyler,robinson@yahoo.com
+CUST0036,Faith,Cabrera,Port Zacharytown,cabrera@yahoo.com
+CUST0037,Charles,Wolfe,Pamhaven,wolfe@yahoo.com
+CUST0038,Kenneth,Kent,North Madisonhaven,kent@yahoo.com
+CUST0039,Melanie,Johnson,Port Pamela,johnson@yahoo.com
+CUST0040,Lisa,Johnston,New Ericstad,johnston@yahoo.com
+CUST0041,Jacob,Hooper,Tammychester,hooper@yahoo.com
+CUST0042,Alex,Woodward,South Jeffrey,woodward@yahoo.com
+CUST0043,Caleb,Clark,Davidmouth,caleb@gmail.com
+CUST0044,Taylor,Johnson,Jonesland,johnson@yahoo.com
+CUST0045,Brian,Green,Lake Michael,green@yahoo.com
+CUST0046,Matthew,Bell,Ramirezfurt,bell@yahoo.com
+CUST0047,Jonathan,Williams,Wrightview,williams@yahoo.com
+CUST0048,William,Gonzalez,Lake Jenniferland,gonzalez@yahoo.com
+CUST0049,Nicholas,Massey,South Jamie,massey@yahoo.com
+CUST0050,Caroline,Chambers,West Corey,caroline@gmail.com
+CUST0051,Amy,Lowe,Riveraburgh,amy@gmail.com
+CUST0052,Gloria,King,South Rebecca,king@yahoo.com
+CUST0053,Jessica,Thompson,Martinmouth,thompson@yahoo.com
+CUST0054,Jason,Carroll,North Mark,carroll@yahoo.com
+CUST0055,Emily,Howard,Port Alexis,howard@yahoo.com
+CUST0056,Danielle,Castro,South Deannaport,castro@yahoo.com
+CUST0057,Patrick,Rogers,North Davidborough,patrick@gmail.com
+CUST0058,Douglas,Allen,New Carolyn,allen@yahoo.com
+CUST0059,Heather,Roberts,Lake Michael,roberts@yahoo.com
+CUST0060,Travis,Schultz,East Seanstad,schultz@yahoo.com
+CUST0061,Michelle,Hughes,Kellerstad,michelle@gmail.com
+CUST0062,Matthew,Smith,North Jenniferfurt,matthew@gmail.com
+CUST0063,George,Allen,Lake Matthew,george@gmail.com
+CUST0064,Jamie,Hutchinson,Lake Michael,hutchinson@yahoo.com
+CUST0065,Jennifer,Morales,Davidshire,morales@yahoo.com
+CUST0066,Jennifer,Bates,Susantown,bates@yahoo.com
+CUST0067,Jeremy,Green,New Keith,jeremy@gmail.com
+CUST0068,Joseph,Freeman,Jacobborough,freeman@yahoo.com
+CUST0069,Nicole,Henson,Jenningsburgh,henson@yahoo.com
+CUST0070,Eric,Owens,North Troyport,eric@gmail.com
+CUST0071,Robin,Lopez,Ayalaview,lopez@yahoo.com
+CUST0072,Angela,Swanson,East Kari,swanson@yahoo.com
+CUST0073,Michael,Stewart,West Amanda,michael@gmail.com
+CUST0074,Mitchell,Smith,Reyeschester,smith@yahoo.com
+CUST0075,Kelsey,Davis,Reyestown,davis@yahoo.com
+CUST0076,Matthew,Russo,Gilberttown,russo@yahoo.com
+CUST0077,William,Garcia,Wernermouth,garcia@yahoo.com
+CUST0078,Jennifer,Miller,East Benjaminbury,miller@yahoo.com
+CUST0079,Jesse,Sparks,Waltersport,sparks@yahoo.com
+CUST0080,Brandi,Meyer,West Morganport,meyer@yahoo.com
+CUST0081,Hannah,Wiggins,Rogersmouth,hannah@gmail.com
+CUST0082,Albert,Williams,Hunterville,williams@yahoo.com
+CUST0083,Kristin,Potts,Port Jonathan,kristin@gmail.com
+CUST0084,Susan,Williams,West Heatherstad,williams@yahoo.com
+CUST0085,Meredith,Rios,Dennishaven,meredith@gmail.com
+CUST0086,Stephanie,Bowman,East Davidberg,bowman@yahoo.com
+CUST0087,Joshua,Clark,South Patrick,clark@yahoo.com
+CUST0088,Alexa,Hernandez,Hugheston,alexa@gmail.com
+CUST0089,Richard,Higgins,Davidbury,higgins@yahoo.com
+CUST0090,Marc,Williams,Mccallberg,williams@yahoo.com
+CUST0091,William,Roberts,East Seanstad,roberts@yahoo.com
+CUST0092,Joshua,Carter,Jesseville,carter@yahoo.com
+CUST0093,David,Williams,Morganfort,williams@yahoo.com
+CUST0094,Joseph,Jones,Lake Michael,jones@yahoo.com
+CUST0095,Gary,Perry,Mcdowellview,perry@yahoo.com
+CUST0096,Terry,Wells,Kellystad,wells@yahoo.com
+CUST0097,Vanessa,Cooper,New Daniel,cooper@yahoo.com
+CUST0098,Michael,Simmons,Lutzberg,simmons@yahoo.com
+CUST0099,Nicholas,Kline,Chelsealand,kline@yahoo.com
+CUST0100,Lori,Bennett,North Johntown,bennett@yahoo.com
