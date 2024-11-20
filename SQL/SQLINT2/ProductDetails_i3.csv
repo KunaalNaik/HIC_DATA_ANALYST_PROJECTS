@@ -1,0 +1,32 @@
+ProductID,ProductName,Price,Category
+PROD0001,Laptop,191.43,Electronics
+PROD0002,Smartphone,170.56,Electronics
+PROD0003,Tablet,228.28,Electronics
+PROD0004,Headphones,203.16,Electronics
+PROD0005,Smartwatch,208.32,Electronics
+PROD0006,T-shirt,163.73,Clothing
+PROD0007,Jeans,190.73,Clothing
+PROD0008,Jacket,211.45,Clothing
+PROD0009,Sneakers,198.83,Clothing
+PROD0010,Dress,224.76,Clothing
+PROD0011,Blender,224.46,Home Appliances
+PROD0012,Microwave,196.16,Home Appliances
+PROD0013,Vacuum Cleaner,189.07,Home Appliances
+PROD0014,Refrigerator,199.19,Home Appliances
+PROD0015,Air Conditioner,252.85,Home Appliances
+PROD0016,Fiction,219.65,Books
+PROD0017,Non-Fiction,195.02,Books
+PROD0018,Science,207.48,Books
+PROD0019,Biography,261.55,Books
+PROD0020,Children,228.05,Books
+PROD0021,Lipstick,220.71,Beauty
+PROD0022,Perfume,170.97,Beauty
+PROD0023,Moisturizer,269.1,Beauty
+PROD0024,Facewash,192.53,Beauty
+PROD0025,Shampoo,180.8,Beauty
+PROD0026,Puzzle,206.76,Toys
+PROD0027,Lego Set,178.21,Toys
+PROD0028,Doll,195.34,Toys
+PROD0029,Toy Car,217.71,Toys
+PROD0030,Board Game,178.69,Toys
+PROD0031,Dice,123.45,Toys
